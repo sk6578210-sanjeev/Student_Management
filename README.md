@@ -1,19 +1,115 @@
-# React + Vite
+# Student Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the Project
 
-Currently, two official plugins are available:
+The Student Management System is a React application built using **class components**. It allows users to view student information, select students to see their details, and change student courses.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is created to understand React class components, state management, props, conditional rendering, event handling, and component lifecycle methods.
 
-## React Compiler
+## Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+* Display a list of students with ID, name, course, and status.
+* Show the total number of students.
+* Display a welcome message when the dashboard loads.
+* View individual student details.
+* Show and hide the student details section.
+* Change a student's course dynamically.
+* Display a timer showing how long the dashboard has been active.
+* Understand component lifecycle methods through console logs.
+* Apply CSS styling for a responsive user interface.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## Technologies Used
 
-## Expanding the ESLint configuration
+* React.js
+* JavaScript
+* HTML
+* CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+
+student-management-system/
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── StudentDashboard.jsx
+│   ├── StudentDetails.jsx
+│   └── main.jsx
+├── package.json
+└── README.md
+
+
+*The structure may vary slightly depending on your project setup.*
+
+## React Concepts Covered
+
+### 1. Class Components
+
+Used to create the `StudentDashboard` and `StudentDetails` components.
+
+### 2. State Management
+
+Used to store student information, the selected student, the welcome message, the visibility of student details, and the timer value.
+
+### 3. Props
+
+Passes the selected student's information from `StudentDashboard` to `StudentDetails`.
+
+### 4. Event Handling
+
+Uses `onClick` to handle actions such as viewing details, changing courses, and showing or hiding student details.
+
+### 5. List Rendering
+
+Uses the `map()` method to display the list of students.
+
+### 6. Conditional Rendering
+
+Displays the welcome message and student details based on the current state.
+
+### 7. Lifecycle Methods
+
+Demonstrates:
+
+* `constructor()`
+* `componentDidMount()`
+* `componentDidUpdate()`
+* `componentWillUnmount()`
+* `render()`
+
+### 8. Timer Management
+
+Uses `setInterval()` to update the elapsed time and `clearInterval()` to clean up the timer when the dashboard is unmounted.
+
+## Installation and Setup
+
+### Prerequisites
+
+* Node.js
+* npm
+* A code editor such as Visual Studio Code
+
+### Steps to Run the Project
+
+1. Clone the repository:
+
+   git clone YOUR_GITHUB_REPOSITORY_URL
+
+2. Navigate to the project folder:
+
+   cd student-management-system
+
+3. Install the dependencies:
+
+   npm install
+
+4. Start the development server:
+
+   npm run dev
+
+5. Open the local URL displayed in your terminal.
+
+## Learning Objective
+
+The main objective of this project is to gain practical experience with React class components and understand how state, props, event handling, conditional rendering, and lifecycle methods work together in a React application.
